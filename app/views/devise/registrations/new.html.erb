@@ -1,8 +1,13 @@
-<h1>Registro</h1>
-
+<div>
+  <img class="imagen" width="50px" height="50px" src="http://proveedores.zapopan.gob.mx/PortalProveedores/images/IconoRegistro.png">
+<h1 class="salachat">Registro</h1>
+</div>
+<div class="registro">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
+<div>
+ <h5 ><%= devise_error_messages! %> </h5>
+</div>
+  
   <div class="form-group">
     <%= f.label :email %>
     <%= f.email_field :email, autofocus: true, class: 'form-control' %>
@@ -21,7 +26,8 @@
     <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
   </div>
 
-  <%= f.submit "Sign up", class: 'btn btn-primary' %>
+  <center><%= f.submit "Sign up", class: 'btn btn-primary' %></center>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<center><%= render "devise/shared/links" %></center>
+</div>

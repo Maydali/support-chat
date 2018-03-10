@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Wascop App</title>
   <%= csrf_meta_tags %>
 
@@ -12,6 +12,7 @@
 <body>
 
 <nav class="nav-wrapper navigation-bar">
+    <img class="imagen" height="50px" width="50px" src="https://pbs.twimg.com/profile_images/796740771/soots_twitter.jpg">
   <%= link_to 'Wascop App', root_path, class: 'brand-logo' %>
 
   <% if user_signed_in? %>
